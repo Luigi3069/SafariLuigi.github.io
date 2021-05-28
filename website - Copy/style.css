@@ -1,0 +1,22 @@
+.logo {
+    width: 75px;
+    height: 75px;
+    float: left;
+    margin: -10px 20px 0 -10px;
+}
+h1 {
+    float: none;
+}
+header {
+    margin: -15.7px 0 0 0;
+}
+nav {
+    margin: -16px 0 0 0;
+}
+.carousel-item {
+    align-content: center;
+}
+#FG {
+    text-align: center;
+    margin-bottom: 50px;
+}

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title>Destiny News</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js.js"></script>
+</head>
+
+<body>
+  <header>
+    <div class="container-fluid p-3 my-3 bg-dark text-white" id="left">
+      <img class="logo" src="dnews.svg" alt="destiny news logo">
+      <h1>Destiny News</h1>
+    </div>
+  </header>
+  <nav class="navbar navbar-expand-sm bg-secondary navbar-dark">
+    <ul class="navbar-nav">
+        <div id="menu1" onclick="swap1(this)"><a class="nav-link" href="#" accesskey="1">Patchnotes/TWAB</a></div>
+        <div id="menu2" onclick="swap2(this)"><a class="nav-link" href="#" accesskey="2">Wanted Weapons/God Rolls</a></div>
+        <div id="menu3" onclick="swap3(this)"><a class="nav-link" href="#" accesskey="3">Featured Gaurdians</a></div>
+    </ul>
+  </nav>
+  <div class="tab" onclick="tab()" >
+  <div id="notes" style="display: none;">
+  <div class="container-sm border">
+    <h1>DESTINY 2 HOTFIX 3.2.0.2</h1> <br>
+    10h - Destiny Dev Team <br>
+    <br>
+    <h3>GAMEPLAY AND INVESTMENT</h3> <br>
+    <br>
+    <div class="container-md mt-3 border">
+    <h4>ARMOR</h4> <br>
+    . Fixed an issue where Recovery-focused Umbral Engrams would sometimes not award armor with a sufficiently high
+    Recovery stat.<br>
+    <br>
+    . Fixed issues where some Common, Uncommon, and Rare armors would provide stat bonuses when used as ornaments as a
+    part of Armor Synthesis.<br>
+    <br>
+    . Energy Accelerant mod:<br>
+    -No longer increases damage against players.<br>
+    <br>
+    -No longer increases the base damage of Symmetry, Telesto, Black Talon, and Deathbringer.<br>
+    <br>
+    -Telesto has also received another sternly worded lecture.<br>
+    <br>
+    . Sundering Blast no longer causes Overload champions to exit their stun state when damaged by the explosion created
+    by the mod.<br>
+    <br>
+    .Fixed an issue where Star-Eater Scales was erroneously applying its damage bonus to weapons and grenades instead of
+    only Supers as intended.<br>
+    <br>
+    -Increased the maximum number of stacks required for the full damage bonus from four stacks to eight stacks.<br>
+    <br>
+    .Fixed an issue where players could spawn too many noble seekers with Boots of the Assembler by stepping in and out
+    of a Rift.<br>
+    <br>
+    -When Warlocks wearing Boots of the Assembler are extending the duration of a Rift, class ability regeneration
+    pauses.<br>
+    <br>
+    -Design note: The reason for this change was both to prevent game crashes caused by too many rifts being placed in a
+    single activity, and to restore some of the advantage to running Sanguine Alchemy over Boots of the Assembler.<br>
+    <br>
+    </div>
+    <br>
+    <div class="container-md mt-3 border">
+    <h4>WEAPONS</h4><br>
+    . Fixed an issue where the catalyst for Cryosthesia 77K was incorrectly accruing progress from energy weapon kills.<br>
+    <br>
+    . Fixed an issue where the catalyst Triumph for Cryosthesia 77K was being displayed in the wrong weapon category.<br>
+    <br>
+    . Fixed an issue where Cryosthesia 77K could fire multiple freeze shots without losing the charged shot buff.<br>
+    <br>
+    . Fixed an issue where existing drops of THE SWARM with Unrelenting switched to Bottomless Grief.<br>
+    <br>
+    -This fix only works in cases where players didn't select the Bottomless Grief node.<br>
+    <br>
+    </div>
+    <br>
+    <div class="container-md mt-3 border">
+    <h4>ACCESSORIES</h4><br>
+    .Fixed an issue that prevented the Vie for Glory Sparrow from taking shaders.<br>
+    <br>
+    </div>
+    <br>
+    <div class="container-md mt-3 border">
+    <h4>POWER AND PROGRESSION</h4><br>
+    . Fixed an issue where the reward for completing the weekly Vendor Challenge on the Splicer Servitor did not reward
+    Pinnacle gear as advertised.<br>
+    <br>
+    . Upon completion, the weekly Vendor Challenge should now reward a Pinnacle piece of Seasonal gear.<br>
+    <br>
+    . Fixed an issue where completing Presage as a weekly Activity Challenge was not rewarding Pinnacle gear.<br>
+    <br>
+    </div>
+    <br>
+    <div class="container-md mt-3 border">
+    <h4>UI/UX</h4><br>
+    Fixed an issue where the Armor Synthesis ornament creation tutorial does not show up for Titan characters when
+    reaching the armor ornament creation step.
+    <br>
+    </div>
+    <br>
+    <div class="container-md mt-3 border">
+    <h4>GENERAL</h4><br>
+    . Players will no longer be able to claim the 150 Synthstrand from Ada-1 during the intro quest if their inventory is
+    full.<br>
+    <br>
+    . This will prevent players from losing the material and they will need to clear out inventory space to claim their
+    Synthstrand. <br>
+    </div>
+    <br>
+  </div>
+  </div>
+  </div>
+  <div class="tab" onclick="tab()">
+  <div id="rolls" style="display: none;">
+    <table class="table table-dark table-hover">
+      <thead>
+        <tr>
+          <th>Image</th>
+          <th>Weapon Name</th>
+          <th>Prefered Rolls</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><img class="Weapon" src="falling guillotine.jpg" alt="sword"> </td>
+          <td>Falling Guillotine</td>
+          <td><img class="Roll" src="fgroll.svg" alt="swordroll"></td>
+        </tr>
+        <tr>
+          <td><img class="Weapon" src="ikelos smg.jpg" alt="smg"></td>
+          <td>IKELOS_SMG_V1.0.2 </td>
+          <td><img class="Roll" src="smgroll.svg" alt="smgroll"></td>
+        </tr>
+        <tr>
+          <td><img class="Weapon" src="fatebringer.jpg" alt="handcannon"></td>
+          <td>FateBringer</td>
+          <td><img class="Roll" src="handcannonroll.svg" alt="smgroll"></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  </div>
+  <div class="tab" onclick="tab()">
+  <div id="guardians" style="display: none;" class="carousel slide" data-ride="carousel">
+    <h1 id="FG" style="color: white;">Featured Gaurdians</h1>
+    <ul class="carousel-indicators">
+      <li data-target="#demo" data-slide-to="0" class="active"></li>
+      <li data-target="#demo" data-slide-to="1"></li>
+      <li data-target="#demo" data-slide-to="2"></li>
+    </ul>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="guardian1.svg" alt="Warlock" width="100%" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="guardian2.svg" alt="Hunter" width="100%" height="500">
+      </div>
+      <div class="carousel-item">
+        <img src="guardian3.svg" alt="Titian" width="100%" height="500">
+      </div>
+    </div>
+    <a class="carousel-control-prev" href="#guardians" data-slide="prev">
+      <span class="carousel-control-prev-icon"></span>
+    </a>
+    <a class="carousel-control-next" href="#guardians" data-slide="next">
+      <span class="carousel-control-next-icon"></span>
+    </a>
+  </div>
+  </div>
+  </body>
+  </html>
